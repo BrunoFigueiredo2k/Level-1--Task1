@@ -1,11 +1,9 @@
 package com.example.level1_task1
 
-import android.R
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.example.level1_task1.databinding.ActivityHigherLowerBinding
-
 
 class HigherLowerActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHigherLowerBinding
@@ -34,16 +32,16 @@ class HigherLowerActivity : AppCompatActivity() {
      * Update the last throw text and the dice image resource drawable with the current throw.
      */
     private fun updateUI() {
-        val myImageView: ImageView = findViewById(R.id.currentThrowImg) as ImageView
+        binding.tvLastThrow.text = getString(R.string.last_throw, lastThrow)
+
         when (currentThrow) {
             1 -> binding.currentThrowImg.setImageResource(R.drawable.dice1)
-            2 -> println("x == 2")
-            3 -> println("Current throw: 1")
-            4 -> println("x == 2")
-            5 -> println("Current throw: 1")
-            6 -> println("x == 2")
+            2 -> binding.currentThrowImg.setImageResource(R.drawable.dice2)
+            3 -> binding.currentThrowImg.setImageResource(R.drawable.dice3)
+            4 -> binding.currentThrowImg.setImageResource(R.drawable.dice4)
+            5 -> binding.currentThrowImg.setImageResource(R.drawable.dice5)
+            6 -> binding.currentThrowImg.setImageResource(R.drawable.dice6)
         }
-        binding.tvLastThrow.text = getString(R.string.last_throw, lastThrow)
     }
 
     private fun rollDice(){
