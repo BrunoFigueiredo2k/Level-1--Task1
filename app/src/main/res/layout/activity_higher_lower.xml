@@ -14,7 +14,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/currentThrowImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="260dp"
@@ -24,41 +24,41 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvLastThrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/last_throw"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/currentThrowImg"
         app:layout_constraintVertical_bias="0.12" />
 
     <Button
-        android:id="@+id/btn-equals"
+        android:id="@+id/btnEquals"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_equals"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn-higher"
-        app:layout_constraintStart_toEndOf="@+id/btn-lower" />
+        app:layout_constraintEnd_toStartOf="@+id/btnHigher"
+        app:layout_constraintStart_toEndOf="@+id/btnLower" />
 
     <Button
-        android:id="@+id/btn-lower"
+        android:id="@+id/btnLower"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_lower"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn-equals"
+        app:layout_constraintEnd_toStartOf="@+id/btnEquals"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn-higher"
+        android:id="@+id/btnHigher"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_higher"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn-equals" />
+        app:layout_constraintStart_toEndOf="@+id/btnEquals" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

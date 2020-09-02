@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Level 1 - Task 1</string>
     <string name="title">Guess if the next throw is going to be lower, equal or higher.</string>
-    <string name="last_throw">Last Throw: 1</string>
+    <string name="last_throw">Last Throw: %d</string>
     <string name="btn_lower">Lower</string>
     <string name="btn_equals">Equals</string>
     <string name="btn_higher">Higher</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect!</string>
 </resources>
